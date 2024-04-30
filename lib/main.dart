@@ -10,7 +10,6 @@ import 'package:nasa_today/utils/constants.dart';
 void main() async {
   await runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
-    //config logging
     Loggy.initLoggy(logPrinter: const PrettyPrinter(showColors: true));
 
     const config = EnvData(
